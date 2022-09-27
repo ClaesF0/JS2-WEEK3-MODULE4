@@ -1,0 +1,25 @@
+{
+  "name": "js2-week3-module4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaesF0/JS2-WEEK3-MODULE4.git"
+  },
+  "author": "claes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaesF0/JS2-WEEK3-MODULE4/issues"
+  },
+  "homepage": "https://github.com/ClaesF0/JS2-WEEK3-MODULE4#readme",
+  "devDependencies": {
+    "vite": "^3.1.3"
+  }
+}

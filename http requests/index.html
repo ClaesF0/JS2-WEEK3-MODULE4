@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CRUD http request methods</title>
+</head>
+<body>
+    <h1>CRUD http request methods</h1>
+    <hr>
+    <div id="container">
+        <h2>URL params: id userId status etc</h2>
+        <a href="https://www.example.com/?firstName=hesham&lastName=elmasry">Submit</a>
+        <p>were gonna use JS to create a new href for this a-tag</p>
+        <p>now its looking like this</p> 
+        <code>< a href="https://www.example.com/?firstName=hesham&lastName=elmasry">Submit< /a ></code>
+        <p>which makes the url to be</p>
+        <code>https://www.example.com/?firstName=hesham&lastName=elmasry</code>
+        <p>//CREATING A DYNAMIC URL 
+            // THE URL IS SEPARATED INTO KEYS AND VALUES,LIKE userId=1 SEPARATED BY A &, like  ?userId=1&Id=2
+            //first i need to append a child div to the container
+//therefore first step is selecting the container
+<br>
+const container = document.getElementById("container");
+
+//now i will create two variables firstName and lastName
+// values of my query string
+<br>
+const firstName = "Mats";
+const lastName = "Norwegian";
+<br>
+console.log(firstName);
+console.log(lastName);
+/*<br>
+const newLink = document.createElement("a") //create an A tag;
+//always consolelog to see what youve got
+console.log(newLink);
+<br>
+newLink.href = `https://www.example.com/?firstName=${firstName}&lastName=${lastName}`
+console.log(newLink);
+<br>
+//now add innertext to the anchor weve created
+newLink.textContent = "new Submit";
+console.log(newLink);
+<br>
+// now we want to add/append the new link to the container
+container.appendChild(newLink);
+//one may also do this 
+*/<br>
+container.innerHTML += `<a href="https://www.example.com/?firstName=${firstName}&lastName=${lastName}">Submit<a>`;
+// IMPORTANT REMEMBER TO USE PLUSEQUAL+=, THAT WILL ADD - OR LESS IT WILL REPLACE EVERYTHING
+
+
+        </p>
+        <code>
+        
+            
+        </code>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
